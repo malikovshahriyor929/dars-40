@@ -1,0 +1,13 @@
+javscript 3 xil ishatish usuli bor 
+node js 
+browzer
+script
+
+jvascript complier 
+lekin interpriter bololadi
+javascript code ni 2 marta oqidi birinchisida koz yugurtiradi
+ikkinchisida oqidi
+
+var  eskiroq hatolari bor
+conts 2015
+let 2015
