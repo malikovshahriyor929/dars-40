@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="./assets/svg/logo_icon.svg" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="bg-[#f4f9fb] py-5 relative">
+      <div class="container2">
+        <nav class="navbar flex justify-between gap-10 items-center">
+          <img src="./assets/svg/logo.svg" alt="" />
+          <input class="hidden" id="headercheck" type="checkbox" />
+          <nav class="btnss">
+            <label
+              class="max-[500px]:w-[30%] backdrop-blur-[5px]"
+              for="headercheck"
+              ><div></div
+            ></label>
+            <nav
+              class="max-[500px]:flex flex-col gap-7 items-center max-[500px]:bg-white justify-center max-[500px]:w-[70%] max-[500px]:justify-start"
+            >
+              <nav
+                class="flex items-center gap-5 max-[500px]:flex-col max-[500px]:pt-[70px]"
+              >
+                <button
+                  class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 block max-[500px]:hidden max-[500px]:py-3 max-[500px]:px-5"
+                >
+                  Вход
+                </button>
+                <button
+                  class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 hidden max-[500px]:block max-[500px]:py-3 max-[500px]:px-5 max-[300px]:text-[14px]"
+                >
+                  Вход для соискателя
+                </button>
+                <button
+                  class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 hidden max-[500px]:block max-[500px]:py-3 max-[500px]:px-5 max-[300px]:text-[14px]"
+                >
+                  Вход для директора
+                </button>
+                <button
+                  class="rounded py-3 px-6 border-primary border text-primary bg-white hover:bg-primary hover:text-white duration-700 max-[627px]:py-1 max-[627px]:px-3 max-[500px]:py-3 max-[500px]:px-5 max-[300px]:text-[14px]"
+                >
+                  Регистрация
+                </button>
+              </nav>
+              <ul
+                class="max-[500px]:flex text-[15px] text-[#292929] hidden flex-col gap-5"
+              >
+                <li>
+                  <a class="hover:text-[#2b2b2b]" href="#"
+                    >Пользовательское соглашение</a
+                  >
+                </li>
+                <li><a href="#">Правовая информация</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Помощь (FAQ)</a></li>
+                <li>
+                  <a class="text-primary underline" href="#"
+                    >Служба поддержки</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </nav>
+          <label class="hidden max-[500px]:block" for="headercheck">
+            <img class="menu" src="./assets/svg/menu.svg" alt="" />
+            <img class="close" src="./assets/svg/x.svg" alt="" />
+          </label>
+        </nav>
+      </div>
+    </header>
+    <!-- showcase start  -->
+    <section class="bg-[#f4f9fb]">
+      <div class="container2">
+        <div
+          class="flex items-center justify-between max-[600px]:flex-col-reverse"
+        >
+          <div class="flex flex-col gap-4 items-start max-[600px]:items-center">
+            <h1
+              class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[45px] max-[600px]:text-center max-[538px]:text-[32px] max-[376px]:text-[26px] max-[314px]:text-[24px] max-[288px]:text-[22px]"
+            >
+              команды мечты <br class="max-[600px]:block hidden" />
+              создаются здесь
+            </h1>
+            <p
+              class="text-[15px] text-[#292929] max-w-[316px] max-[1050px]:text-[14px] max-[600px]:text-[16px] max-[450px]:text-[15px] max-[600px]:text-center"
+            >
+              помощник в поиске работы и сотрудников в сфере образования
+            </p>
+            <button
+              class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 block max-[500px]:py-4 max-[500px]:px-5 max-[600px]:w-full"
+            >
+              Начать
+            </button>
+          </div>
+          <div>
+            <img
+              class="mb-[-30px] max-[1050px]:mb-0 max-[600px]:w-[60%] max-[600px]:mx-auto"
+              src="./assets/img/main_illustr.png "
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- statictic start  -->
+    <section class="mt-16">
+      <div class="container2">
+        <div>
+          <!-- <div class="bg-[#f4f9fb] px-10 py-8">
+            <img src="./assets/svg/statistic1.svg" alt="" />
+            <p
+              class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px] max-[376px]:text-[26px] max-[314px]:text-[24px] max-[288px]:text-[22px]"
+            >
+              67
+            </p>
+            <p
+              class="text-[15px] text-[#292929] max-w-[316px] max-[1050px]:text-[14px] max-[600px]:text-[16px] max-[450px]:text-[15px]text-center"
+            >
+              предложений о работе
+            </p>
+          </div> -->
+          <div></div>
+          <div></div>
+        </div>
+        <div class="swiper mySwiper mx-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="bg-[#f4f9fb] px-7 py-10 rounded-3xl flex flex-col gap-2 items-center justify-center w-full"
+              >
+                <img src="./assets/svg/statistic1.svg" alt="" />
+                <p
+                  class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[30px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px] max-[376px]:text-"
+                >
+                  67
+                </p>
+                <p
+                  class="text-[18px] text-[#292929] max-w-[316px] max-[1050px]:text-[18px] max-[600px]:text-[18px] max-[450px]:text-[18px] text-center"
+                >
+                  предложений о работе
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#f4f9fb] px-7 py-10 rounded-3xl flex flex-col gap-2 items-center justify-center w-full"
+              >
+                <img src="./assets/svg/statistic2.svg" alt="" />
+                <p
+                  class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px]"
+                >
+                  180
+                </p>
+                <p
+                  class="text-[18px] text-[#292929] max-w-[316px] max-[1050px]:text-[18px] max-[600px]:text-[18px] max-[450px]:text-[18px] text-center"
+                >
+                  предложений о работе
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#f4f9fb] px-7 py-10 rounded-3xl flex flex-col gap-2 items-center justify-center w-full"
+              >
+                <img src="./assets/svg/statistic3.svg" alt="" />
+                <p
+                  class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px]"
+                >
+                  113
+                </p>
+                <p
+                  class="text-[18px] text-[#292929] max-w-[316px] max-[1050px]:text-[18px] max-[600px]:text-[18px] max-[450px]:text-[18px] text-center"
+                >
+                  приглашений на собеседование 
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#f4f9fb] px-7 py-10 rounded-3xl flex flex-col gap-2 items-center justify-center w-full"
+              >
+                <img src="./assets/svg/statistic1.svg" alt="" />
+                <p
+                  class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[30px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px] max-[376px]:text-"
+                >
+                  67
+                </p>
+                <p
+                  class="text-[18px] text-[#292929] max-w-[316px] max-[1050px]:text-[18px] max-[600px]:text-[18px] max-[450px]:text-[18px] text-center"
+                >
+                  предложений о работе
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#f4f9fb] px-7 py-10 rounded-3xl flex flex-col gap-2 items-center justify-center w-full"
+              >
+                <img src="./assets/svg/statistic2.svg" alt="" />
+                <p
+                  class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px]"
+                >
+                  180
+                </p>
+                <p
+                  class="text-[18px] text-[#292929] max-w-[316px] max-[1050px]:text-[18px] max-[600px]:text-[18px] max-[450px]:text-[18px] text-center"
+                >
+                  предложений о работе
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="bg-[#f4f9fb] px-7 py-10 rounded-3xl flex flex-col gap-2 items-center justify-center w-full"
+              >
+                <img src="./assets/svg/statistic3.svg" alt="" />
+                <p
+                  class="text-[50px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[40px] max-[828px]:text-[35px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[45px] text-center max-[538px]:text-[32px]"
+                >
+                  113
+                </p>
+                <p
+                  class="text-[18px] text-[#292929] max-w-[316px] max-[1050px]:text-[18px] max-[600px]:text-[18px] max-[450px]:text-[18px] text-center"
+                >
+                  приглашений на собеседование 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- people start  -->
+    <section class="my-10">
+      <div class="container2">
+        <div
+          class="grid grid-cols-2 gap-10 max-[1147px]:gap-7 max-[1033px]:grid-cols-1"
+        >
+          <div
+            class="bg-[#f4f9fb] rounded-2xl justify-between px-7 py-5 flex gap-5 max-[1129px]:pr-0 max-[420px]:pr-5"
+          >
+            <div class="flex flex-col justify-center gap-3">
+              <p class="font-medium text-[18px] text-[#292929]">
+                Для работодателей
+              </p>
+              <p class="text-[15px] text-[#292929] max-w-[308px]">
+                Доступ к банку резюме предоставляется администрациям школ города
+                Москвы. Если вы являетесь директором московской школы, вы можете
+                войти в банк резюме, используя единую учетную запись ЕКИС.
+              </p>
+              <button
+                class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 block max-[500px]:py-2 max-[500px]:px-5"
+              >
+                Вход
+              </button>
+            </div>
+            <div class="mt-[-30px] max-[494px]:hidden">
+              <img src="./assets/svg/people.svg" alt="" />
+            </div>
+          </div>
+          <div
+            class="bg-[#f4f9fb] rounded-2xl px-10 py-5 flex gap-0 justify-between max-[1129px]:pr-0 max-[420px]:pr-5"
+          >
+            <div class="flex flex-col justify-center gap-5">
+              <p class="font-medium text-[18px] text-[#292929]">
+                Для работодателей
+              </p>
+              <p class="text-[15px] text-[#292929] max-w-[308px]">
+                Ваш помощник в поиске работы в московских школах. Бесплатная
+                публикация резюме
+              </p>
+              <div
+                class="flex gap-4 max-[1207px]:flex-col items-start max-[494px]:w-full max-[494px]:items-center"
+              >
+                <button
+                  class="rounded py-3 px-6 border-primary border text-primary bg-white hover:bg-primary hover:text-white duration-700 max-[627px]:py-1 max-[627px]:px-3 max-[500px]:py-2 max-[494px]:w-full max-[500px]:px-5 max-[300px]:text-[14px]"
+                >
+                  Зарегистрироваться
+                </button>
+                <button
+                  class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 block max-[494px]:w-full max-[500px]:py-2 max-[500px]:px-5"
+                >
+                  Вход
+                </button>
+              </div>
+            </div>
+            <div class="mt-[-30px] max-[494px]:hidden">
+              <img src="./assets/svg/people2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- welcome start  -->
+    <section class="my-10">
+      <div class="container2">
+        <div
+          class="grid grid-cols-2 gap-10 bg-[#f4f9fb] p-5 max-[695px]:grid-cols-1 flex-col-reverse rounded-2xl"
+        >
+          <div class="t flex-col gap-4 hidden max-[695px]:flex">
+            <p
+              class="text-[32px] text-[#292929] font-black text-center uppercase max-[327px]:text-[26px]"
+            >
+              welcome-курс
+            </p>
+            <p class="text-[15px] text-center">
+              Запишитесь, чтобы пройти бесплатный welcome-курс.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 grid-rows-2 gap-5">
+            <div
+              class="bg-[#FF879F] flex flex-col gap-10 p-5 rounded-2xl items-start"
+            >
+              <div
+                class="rounded-lg p-1 bg-white h-8 w-8 flex items-center justify-center text-[#FF879F]"
+              >
+                1
+              </div>
+              <div>
+                <p
+                  class="font-black text-[24px] uppercase text-white max-[327px]:text-[20px]"
+                >
+                  Запишитесь
+                </p>
+                <p class="text-[15px] text-white">на консультацию</p>
+              </div>
+            </div>
+            <div
+              class="bg-[#65b2d6] flex flex-col gap-10 p-5 rounded-2xl items-start"
+            >
+              <div
+                class="rounded-lg p-1 bg-white h-8 w-8 flex items-center justify-center text-[#65b2d6]"
+              >
+                2
+              </div>
+              <div>
+                <p
+                  class="font-black text-[24px] uppercase text-white max-[327px]:text-[18px]"
+                >
+                  пройдите курс
+                </p>
+                <p class="text-[15px] text-white">на консультацию</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center justify-center">
+            <div class="flex items-start flex-col gap-4 max-[695px]:w-full">
+              <p
+                class="text-[32px] max-[695px]:hidden text-[#292929] font-black uppercase"
+              >
+                welcome-курс
+              </p>
+              <p class="text-[15px] max-[695px]:hidden flex">
+                Запишитесь, чтобы пройти бесплатный welcome-курс.
+              </p>
+              <button
+                class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 max-[500px]:py-3 max-[500px]:px-5 max-[695px]:w-full"
+              >
+                Записаться
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-14">
+      <div class="container2 flex flex-col gap-10">
+        <div class="flex justify-between gap-10">
+          <div
+            class="flex gap-10 max-[989px]:flex-col max-[989px]:gap-5 max-[989px]:items-center"
+          >
+            <h1
+              class="text-[32px] font-black uppercase text-[#292929] max-[989px]:text-center max-[320px]:text-[24px]"
+            >
+              пройдите <br />
+              диагностику
+            </h1>
+            <div
+              class="flex-col flex gap-7 max-[900px]:gap-5 max-[989px]:text-center"
+            >
+              <p
+                class="max-w-[332px] text-[#292929] text-[15px] max-[989px]:mx-auto"
+              >
+                Вы можете пройти профессиональную диагностику на нашем сайте и
+                получить результаты сразу после ее прохождения.
+              </p>
+              <div class="hidden max-[989px]:grid">
+                <div class="swiper mySwiper relative w-full">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                      <div
+                        class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-10 max-[1053px]:py-14"
+                      >
+                        <img src="./assets/svg/dig1.svg" alt="" />
+                        <p
+                          class="uppercase text-[24px] text-[#292929] font-black"
+                        >
+                          в любое время
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide text-center">
+                      <div
+                        class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-10 max-[1053px]:py-14"
+                      >
+                        <img class="" src="./assets/svg/dig2.svg" alt="" />
+                        <p
+                          class="uppercase text-[24px] text-[#292929] font-black"
+                        >
+                          прямо на сайте
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide text-center">
+                      <div
+                        class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-5 max-[1053px]:py-14"
+                      >
+                        <img class="" src="./assets/svg/dig3.svg" alt="" />
+                        <p
+                          class="uppercase text-[24px] text-[#292929] font-black"
+                        >
+                          бесплатно
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div
+                        class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-10 max-[1053px]:py-10 text-center"
+                      >
+                        <img src="./assets/svg/dig4.svg" alt="" />
+                        <p
+                          class="uppercase text-[24px] text-[#292929] font-black"
+                        >
+                          результаты –сразу же
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="rounded py-2 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-2 max-[627px]:px-3 max-[500px]:py-2 max-[500px]:px-5"
+              >
+                Пройти диагностику
+              </button>
+            </div>
+          </div>
+          <div class="max-[989px]:hidden">
+            <p class="max-w-[332px] text-[#292929] text-[15px]">
+              В любое время <br />
+              и бесплатно
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-4 items-end gap-10 text-center max-[989px]:hidden"
+        >
+          <div
+            class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-10 max-[1053px]:py-14"
+          >
+            <img src="./assets/svg/dig1.svg" alt="" />
+            <p class="uppercase text-[24px] text-[#292929] font-black">
+              в любое время
+            </p>
+          </div>
+          <div
+            class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-10 max-[1053px]:py-14"
+          >
+            <img class="mt-[-100px]" src="./assets/svg/dig2.svg" alt="" />
+            <p class="uppercase text-[24px] text-[#292929] font-black">
+              прямо на сайте
+            </p>
+          </div>
+          <div
+            class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-5 max-[1053px]:py-14"
+          >
+            <img
+              class="mt-[-150px] max-[1053px]:mt-[-100px]"
+              src="./assets/svg/dig3.svg"
+              alt=""
+            />
+            <p class="uppercase text-[24px] text-[#292929] font-black">
+              бесплатно
+            </p>
+          </div>
+          <div
+            class="bg-[#f4f9fb] px-3 py-20 rounded-2xl flex flex-col justify-center items-center gap-10 max-[1053px]:py-14"
+          >
+            <img src="./assets/svg/dig4.svg" alt="" />
+            <p class="uppercase text-[24px] text-[#292929] font-black">
+              результаты –сразу же
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- cards start  -->
+    <section>
+      <div class="container2">
+        <h1
+          class="text-[32px] font-black uppercase text-[#292929] text-center max-[320px]:text-[28px]"
+        >
+          Анонс мероприятий
+        </h1>
+       
+     <div class="max-[675px]:grid hidden">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              class=" h-[340px]"
+              src="./assets/img/card1.1.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+              class="object-cover w-full"
+              src="./assets/img/card2.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+            class="object-cover w-full"
+            src="./assets/img/card3.png"
+            alt=""
+          />
+          <div class="p-4 flex flex-col gap-2">
+            <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+            <p class="text-[18px] font-medium text-[#292929]">
+              Современная методология разработки оказалась ошибочной
+            </p>
+            <p class="text-[15px] text-[#3d3d3d]">
+              Частотность поисковых запросов оказалась ошибочной
+            </p>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+            class="object-cover w-full"
+            src="./assets/img/card4.png"
+            alt=""
+          />
+          <div class="p-4 flex flex-col gap-2">
+            <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+            <p class="text-[18px] font-medium text-[#292929]">
+              Современная методология разработки оказалась ошибочной
+            </p>
+            <p class="text-[15px] text-[#3d3d3d]">
+              Частотность поисковых запросов оказалась ошибочной
+            </p>
+          </div>
+          </div>
+          <div class="swiper-slide">
+            <img
+            class="object-cover w-full"
+            src="./assets/img/card5.png"
+            alt=""
+          />
+          <div class="p-4 flex flex-col gap-2">
+            <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+            <p class="text-[18px] font-medium text-[#292929]">
+              Современная методология разработки оказалась ошибочной
+            </p>
+            <p class="text-[15px] text-[#3d3d3d]">
+              Частотность поисковых запросов оказалась ошибочной
+            </p>
+          </div></div>
+          
+        </div>
+      </div>
+     </div>
+        <div class="cards max-[675px]:hidden">
+          <div class="card1 bg-[#f4f9fb]">
+            <img
+              class="object-cover w-full"
+              src="./assets/img/card1.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#f4f9fb] card2">
+            <img
+              class="object-cover w-full"
+              src="./assets/img/card2.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#f4f9fb] card3">
+            <img
+              class="object-cover w-full"
+              src="./assets/img/card3.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#f4f9fb] card4">
+            <img
+              class="object-cover w-full"
+              src="./assets/img/card4.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#f4f9fb] card5">
+            <img
+              class="object-cover w-full"
+              src="./assets/img/card5.png"
+              alt=""
+            />
+            <div class="p-4 flex flex-col gap-2">
+              <p class="text-[15px] text-[#a0a0a0]">28.06.2023</p>
+              <p class="text-[18px] font-medium text-[#292929]">
+                Современная методология разработки оказалась ошибочной
+              </p>
+              <p class="text-[15px] text-[#3d3d3d]">
+                Частотность поисковых запросов оказалась ошибочной
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-14 bg-[#f4f9fb]">
+      <div class="container2 flex items-center gap-5 justify-between pr-20 max-[778px]:pr-0 ">
+        <div class="flex flex-col gap-4 items-start  max-[669px]:items-center max-[669px]:mx-auto">
+          <h1
+            class="text-[32px] font-black uppercase text-[#292929] max-w-[674px] max-[1050px]:text-[32px] max-[828px]:text-[32px] max-[722px]:text-[30px] max-[658px]:text-[25px] max-[600px]:text-[30px] max-[669px]:text-center "
+          >карьерная <br class="max-[669px]:block hidden" />консультация</h1>
+          <p
+            class="text-[15px] text-[#292929] max-w-[316px] max-[1050px]:text-[14px] max-[600px]:text-[16px] max-[450px]:text-[15px] max-[669px]:text-center"
+          >Запишитесь, чтобы получить бесплатную карьерную консультацию.</p>
+          <button
+            class="rounded py-3 px-6 bg-primary text-white border-primary border hover:bg-white hover:text-primary duration-700 max-[627px]:py-1 max-[627px]:px-3 block max-[500px]:py-4 max-[500px]:px-5 max-[600px]:w-full"
+          >Записаться</button>
+        </div>
+        <img class="max-[669px]:hidden" src="./assets/svg/louder.svg" alt="">
+      </div>
+    </section>
+
+
+
+    <section>
+      <div class="container2">
+        <div class="grid grid-cols-3  gap-5 max-[1011px]:hidden">
+          <div
+            class="bg-[#FF879F] flex flex-col gap-10 p-5 px-7 rounded-2xl items-start"
+          >
+            <div
+              class="rounded-lg p-1 bg-white h-8 w-8 flex items-center justify-center text-[#FF879F]"
+            >
+              1
+            </div>
+            <div>
+              <p
+                class="font-black text-[24px] uppercase text-white max-[327px]:text-[20px]"
+              >
+                Запишитесь
+              </p>
+              <p class="text-[15px] text-white">на консультацию</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#65b2d6] flex flex-col gap-10 p-5 px-7 rounded-2xl items-start"
+          >
+            <div
+              class="rounded-lg p-1 bg-white h-8 w-8 flex items-center justify-center text-[#65b2d6]"
+            >
+              2
+            </div>
+            <div>
+              <p
+                class="font-black text-[24px] uppercase text-white max-[327px]:text-[18px]"
+              >пройдите опрос </p>
+              <p class="text-[15px] text-white">в удобное время</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#f0d075] flex flex-col gap-10 p-5 px-7 rounded-2xl items-start"
+          >
+            <div
+              class="rounded-lg p-1 bg-white h-8 w-8 flex items-center justify-center text-[#f0d075]"
+            >
+              3
+            </div>
+            <div>
+              <p
+                class="font-black text-[24px] uppercase text-white max-[327px]:text-[18px]"
+              >результаты
+              </p>
+              <p class="text-[15px] text-white">получите на ваш e-mail</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="bg-[#f4f9fb] mt-14 py-10">
+      <div class="container2">
+        <div class="flex gap-5 justify-between max-[767px]:flex-col max-[767px]:items-center max-[767px]:text-center">
+         <p class="text-primary text-[15px] ">Служба поддержки</p>
+          <div class="text-[15px] text-[#292929] flex-col flex gap-1">
+            <a href="/">
+              Пользовательское соглашение
+            </a>
+            <a href="/">
+              Правовая информация
+            </a>
+          </div>
+          <div class="text-[15px] text-[#292929] flex-col flex gap-1">
+            <a href="/">
+              Контакты
+            </a>
+            <a href="/">
+              Помощь (FAQ)
+            </a>
+          </div>
+          <div class="flex gap-3">
+            <img src="./assets/svg/footer_item1.svg" alt="">
+            <img src="./assets/svg/footer_item2.svg" alt="">
+          </div>
+        </div>
+        <div class="text-center pt-10 text-[#7a7a7a] flex gap-4 flex-col">
+          <p>© Департамент образования и науки г. Москвы, 2023</p>
+          <p>При полном или частичном использовании материалов с официальных сайтов Правительства Москвы ссылка на источник обязательна.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          350: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+          600: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

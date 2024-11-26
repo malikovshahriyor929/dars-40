@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .container2 {
+    margin: 0 auto;
+    width: 90%;
+  }
+  @media (min-width: 1400px) {
+    .container2 {
+      width: 1350px;
+      margin: 0 auto;
+    }
+  }
+  .close{
+display: none;
+}
+.menu{
+    display: block;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-areas: "card1 card1 card2"
+  "card3 card4 card5";
+  gap: 40px;
+}
+
+.card1{
+  border-radius: 30px;
+  grid-area: card1;
+}
+.card2{
+  border-radius: 30px;
+  grid-area: card2;
+}
+.card3{
+  grid-area: card3;
+  border-radius: 30px;
+
+}
+.card4{
+  grid-area: card4;
+  border-radius: 30px;
+
+}
+.card5{
+  grid-area: card5;
+  border-radius: 30px;
+
+}
+@media(max-width:1202px){
+  .cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "card1 card1 " "card3 card2"
+    " card4 card5";
+    gap: 40px;
+  }
+}
+
+  @media(max-width:500px){
+    .btnss{
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        z-index: 999;
+        background-color: rgba(255, 0, 0, 0);
+        padding: 0px;
+        display: flex;
+       overflow-y: hidden;
+        transition: 0.5s;
+    }
+   .close{
+    display: none;
+   }
+    #headercheck:checked ~ .btnss{
+        right: 0px;
+    }
+
+  }
